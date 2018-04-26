@@ -194,10 +194,11 @@ a.article, a.article:hover {
     background-image: none;
 }
 .carousel {
+    height: auto;
     width:inherit;
     text-align: center;
 }
 .carousel-inner.item {
     padding :10px;
-    margin: auto;
+    height:inherit;
 }

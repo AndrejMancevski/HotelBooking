@@ -12,8 +12,8 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-    <script src="src/model/Room.js" type="text/javascript"></script>
-    <script src="src/model/Hotel.js" type="text/javascript"></script>
+    <script src="src/pages.js" type="text/javascript"></script>
+    <script src="src/Hotel.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -83,17 +83,65 @@
                     </div>
                 </div>
             </div>
+            <!--
+        ROOMS GO HERE
+    -->
             <div class="row">
-                <h4><i>Room 1</i></h4>
-                <div class="line"></div>
-            </div>
-            <div class="row">
-                <h4><i>Room 2</i></h4>
-                <div class="line"></div>
-            </div>
-            <div class="row">
-                <h4><i>Room 3</i></h4>
-                <div class="line"></div>
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapseRoom1">
+                            <h3 class="panel-title" a>
+                                <button data-toggle="collapse" data-target="#collapseRoom1" class="btn btn-link">
+                                    ROOM 1
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseRoom1" class="panel-collapse collapse">
+                            <div class="panel-body">>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <div class="text-center">
+                                <img id="imgRoom1" src="img/room1.jpg" height="300"
+                                     onclick="modalDis(this, imgMRoom1, modalRoom1);" />
+                                <div id="modalRoom1" class="modal">
+                                    <span id="close1" class="close" onclick="closeModal(modalRoom1);">&times;</span>
+                                    <img class="modal-content" id="imgMRoom1" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" data-toggle="collapse" data-target="#collapseRoom2">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" a>
+                                <button data-toggle="collapse" data-target="#collapseRoom2" class="btn btn-link">
+                                    ROOM 2
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseRoom2" class="panel-collapse collapse">
+                            <div class="panel-body">>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <div class="text-center">
+                                <img id="imgRoom2" src="img/room2.jpg" height="300"
+                                     onclick="modalDis(this, imgMRoom2, modalRoom2);" />
+                                <div id="modalRoom2" class="modal">
+                                    <span id="close1" class="close" onclick="closeModal(modalRoom2);">&times;</span>
+                                    <img class="modal-content" id="imgMRoom2" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" data-toggle="collapse" data-target="#collapseRoom3">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" a>
+                                <button data-toggle="collapse" data-target="#collapseRoom3" class="btn btn-link">
+                                    ROOM 3
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseRoom3" class="panel-collapse collapse">
+                            <div class="panel-body">>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -132,9 +180,7 @@
                      if (quoteIndex === 1) { quoteIndex = 0; }
                      else { quoteIndex++; }
                  }
-                 showNextQuote();
-
-
+                 showNextQuote();                 
              });
     </script>
 </body>
