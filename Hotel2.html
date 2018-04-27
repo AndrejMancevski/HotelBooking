@@ -4,8 +4,6 @@
     <title></title>
     <meta charset="utf-8" />
 
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--My stylesheet-->
     <link rel="stylesheet" href="styles/hotelStyles.css" />
@@ -86,7 +84,7 @@
             <!--
         ROOMS GO HERE
     -->
-            <div class="row">
+            <div class="row" id="roomsDiv">
                 <div class="panel-group">
                     <div class="panel panel-default">
                         <div class="panel-heading" data-toggle="collapse" data-target="#collapseRoom1">
@@ -108,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default" data-toggle="collapse" data-target="#collapseRoom2">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title" a>
                                 <button data-toggle="collapse" data-target="#collapseRoom2" class="btn btn-link">
@@ -122,13 +120,13 @@
                                 <img id="imgRoom2" src="img/room2.jpg" height="300"
                                      onclick="modalDis(this, imgMRoom2, modalRoom2);" />
                                 <div id="modalRoom2" class="modal">
-                                    <span id="close1" class="close" onclick="closeModal(modalRoom2);">&times;</span>
+                                    <span id="close2" class="close" onclick="closeModal(modalRoom2);">&times;</span>
                                     <img class="modal-content" id="imgMRoom2" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default" data-toggle="collapse" data-target="#collapseRoom3">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title" a>
                                 <button data-toggle="collapse" data-target="#collapseRoom3" class="btn btn-link">
@@ -138,6 +136,14 @@
                         </div>
                         <div id="collapseRoom3" class="panel-collapse collapse">
                             <div class="panel-body">>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <div class="text-center">
+                                <img id="imgRoom3" src="img/room3.jpg" height="300"
+                                     onclick="modalDis(this, imgMRoom3, modalRoom3);" />
+                                <div id="modalRoom3" class="modal">
+                                    <span id="close3" class="close" onclick="closeModal(modalRoom3);">&times;</span>
+                                    <img class="modal-content" id="imgMRoom3" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

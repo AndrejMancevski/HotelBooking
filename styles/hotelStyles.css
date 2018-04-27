@@ -179,8 +179,8 @@ a.article, a.article:hover {
 }
 
 /*---Room Panels------------*/
-.panel-heading:hover {
-    background-color:#d5d5d5;
+#roomsDiv {
+    padding-top: 20px;
 }
 .modal{
     display:none;
