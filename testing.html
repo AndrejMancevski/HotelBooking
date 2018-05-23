@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="src/Room.js"></script>
+</head>
+<body>      
+    <script>
+        var room = new Room({ name: "TestRoom" });
+        var start = new Date();
+        var end = new Date(2018, 5, 2);
+        room.reserveRoom(start, end);
+        console.log(JSON.stringify(room.reservedDates));
+    </script>
+</body>
+</html>
