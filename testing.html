@@ -4,14 +4,26 @@
     <title></title>
 	<meta charset="utf-8" />
     <script src="src/Room.js"></script>
+    <script src="src/Hotel.js"></script>
 </head>
 <body>      
     <script>
-        var room = new Room({ name: "TestRoom" });
+        var room1 = new Room({ name: "TestRoom1" });
+        var room2 = new Room({ name: "TestRoom2" });
+        var room3 = new Room({ name: "TestRoom3" });
+        var room4 = new Room({ name: "TestRoom4" });
+        var room5 = new Room({ name: "TestRoom5" });
+
+        /* Reserve Dates!*/
         var start = new Date();
         var end = new Date(2018, 5, 2);
-        room.reserveRoom(start, end);
-        console.log(JSON.stringify(room.reservedDates));
+        room1.reserveRoom(start, end);
+        room4.reserveRoom(start, end);
+        var roomArr = [room1, room2, room3, room4, room5];
+        var hotel1 = new Hotel({ name: "TestHotel", rooms: roomArr });
+        console.log(hotel1.toString());
+        //console.log(JSON.stringify(room.reservedDates));
+        console.log(room3.originalId);
     </script>
 </body>
 </html>
