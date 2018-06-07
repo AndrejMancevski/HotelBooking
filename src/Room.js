@@ -92,7 +92,7 @@ Room.prototype.createTestData = function () {
     Room.instances['h3r2'] = new Room({ name: "Room Beta" });
     //Room.instances['h3r2'].reserveRoom(new Date(2018, 5, 21), new Date(2018, 5, 28));
 
-    Room.instances['h3r3'] = new Room({ name: "Room A" });
+    Room.instances['h3r3'] = new Room({ name: "Room Gamma" });
     Room.instances['h3r3'].reserveRoom(new Date(2018, 0, 21), new Date(2018, 11, 28));
     
     Room.saveAll();
